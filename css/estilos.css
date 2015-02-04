@@ -5,13 +5,21 @@ body
 .cards
 {
 	padding: 5px;
+	display: -webkit-flex;
+	-webkit-justify-content: space-around;
+	-webkit-flex-wrap: wrap;
+	height: 500px;
 }
 
 	.cards__item
 	{
 		display: inline-block;
 		background: #75EDFF;
-		padding: 5px;
+		padding: 15px;
+	}
+	.cards__item:first-child
+	{
+		background: #57DA9A;
 	}
 		.cards__item__header
 		{
@@ -30,4 +38,9 @@ body
 			padding: 0;
 			list-style: none;
 			font-size: .8rem;
+		}
+		.cards__temp::after
+		{
+			content: attr(data-temp);
+			color: yellow;
 		}
