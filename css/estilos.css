@@ -1,0 +1,33 @@
+body
+{
+	font-family: arial, helvetica, verdana;
+}
+.cards
+{
+	padding: 5px;
+}
+
+	.cards__item
+	{
+		display: inline-block;
+		background: #75EDFF;
+		padding: 5px;
+	}
+		.cards__item__header
+		{
+			font-size: 1.5rem;
+			margin: 0 0 .1em 0;
+			border-bottom: 1px solid white;
+		}
+		.cards__item__date
+		{
+			font-size: .5rem;
+			font-family: courier;
+		}
+		.cards__footer
+		{
+			margin: 0;
+			padding: 0;
+			list-style: none;
+			font-size: .8rem;
+		}
