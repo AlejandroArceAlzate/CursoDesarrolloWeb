@@ -1,0 +1,22 @@
+main
+{
+	display: table;
+	caption-side: top;
+}
+
+	header
+	{
+		display: table-caption;
+	}
+	section
+	{
+		display: table-row;
+		background: maroon;
+		width: 80%;
+	}
+	aside
+	{
+		display: table-cell;
+		background: aqua;
+		width: 20%;
+	}
