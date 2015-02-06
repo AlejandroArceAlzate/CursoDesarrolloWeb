@@ -1,0 +1,41 @@
+html
+{
+	font-family: sans-serif;
+	font-size: 110%;
+}
+@media all and (min-width: 400px){
+	html
+	{
+		font-size: 80%;
+	}
+}
+body
+{
+	padding: 0;
+	margin: 0;
+}
+
+.main-header
+{
+	text-align: center;
+	background: #16210B;
+	color: white;
+	padding: 4em;
+}
+
+	.main-header h1
+	{
+		margin: 0;
+	}
+
+	.main-header h2
+	{
+		font-size: 1rem;
+		font-weight: normal;
+	}
+
+	@media screen and (orientation: landscape){
+		.main-header{
+			background: olive;
+		}
+	}
