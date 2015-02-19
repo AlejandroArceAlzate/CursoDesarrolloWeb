@@ -71,7 +71,14 @@
 		cityWeather.temp_min = data.main.temp_min -273.15;
 		cityWeather.main = data.weather[0];
 
-		renderTemplate(cityWeather);
+
+		$.getJSON(API_WORLDTIME + cityWeather.zone, function(response){
+				var newtime = renderTemplate(cityWeather, response.data.time_zone[0].localtime);
+				return newtime;
+			}
+		);
+
+		console.log(newtime);
 	}
 
 	function activateTemplate (id) 
